@@ -34,7 +34,7 @@ cn:CreativeWorkMandatoryAttributes
                      sh:severity sh:Warning ; ] ;
     sh:property    [ sh:path     schema:license ;
                      sh:minCount 1 ;
-                     sh:severity sh:Violation ; ] ;
+                     sh:severity sh:Info ; ] ;
     sh:property    [ sh:path     schema:mainEntityOfPage ;
                      sh:minCount 1 ;
                      sh:severity sh:Violation ; ] ;
@@ -58,7 +58,7 @@ cn:CreativeWorkMaxCount
                      sh:severity sh:Violation; ] ;
     sh:property    [ sh:path     schema:license ;
                      sh:maxCount 1 ;
-                     sh:severity sh:Violation ; ] ;
+                     sh:severity sh:Info ; ] ;
     sh:property    [ sh:path     schema:associatedMedia ;
                      sh:maxCount 1 ;
                      sh:severity sh:Violation ; ] ;
@@ -83,7 +83,7 @@ cn:CreativeWorkType
                    ] ;
     sh:property    [ sh:path     schema:license ;
                      sh:nodeKind sh:IRI ;
-                     sh:severity sh:Violation ;
+                     sh:severity sh:Info ;
                    ] ;
     sh:property    [ sh:path     schema:mainEntityOfPage ;
                      sh:nodeKind sh:IRI ;
