@@ -148,7 +148,7 @@ cn:MediaObjectShapeMinCount
             ] ;
     sh:property [ sh:path schema:license ;
                   sh:minCount 1;
-                  sh:severity    sh:Violation ;
+                  sh:severity    sh:Info ;
                 ] ;
     sh:property [ sh:path schema:thumbnailUrl ;
                   sh:minCount 1;
@@ -170,7 +170,7 @@ cn:MediaObjectShapeMaxCount
     sh:property [ sh:path schema:license ;
                   sh:maxCount 1;
                   sh:nodeKind sh:IRI;
-                  sh:severity    sh:Violation ; ] ;
+                  sh:severity    sh:Info ; ] ;
     sh:property [ sh:path schema:thumbnailUrl ;
                   sh:maxCount 1;
                   sh:severity    sh:Warning ; ] ;
@@ -189,7 +189,7 @@ cn:MediaObjectShapeType
     sh:description "veld type incorrect" ;
     sh:property [ sh:path schema:license ;
                   sh:nodeKind sh:IRI;
-                  sh:severity    sh:Violation ; ] ;
+                  sh:severity    sh:Info ; ] ;
     sh:property [ sh:path schema:contentUrl ;
                   sh:nodeKind sh:IRI;
                   sh:severity  sh:Violation ; ] ;
