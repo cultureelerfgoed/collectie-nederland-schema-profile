@@ -7,7 +7,7 @@
 cn:CreativeWorkNameAdditionalTypePassOne
     a              sh:NodeShape ;
     sh:name        "schema:name of schema:additionalType" ;
-    sh:description "schema:name en schema:additionalType ontbreken" ;
+    sh:description "Minstens één van de properties [schema:name of schema:additionalType] moet aanwezig." ;
     sh:targetClass schema:CreativeWork ;
     sh:or          ( [ sh:property [ sh:path       schema:name ;
                                      sh:minCount   1 ; ] ]
