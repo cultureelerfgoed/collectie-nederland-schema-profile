@@ -6,7 +6,7 @@
 
 cn:CreativeWorkNameAdditionalTypePassOne
     a              sh:NodeShape ;
-    sh:name        "schema:CreativeWork: schema:name en schema:additionalType ontbreken beiden, of zijn onjuist gedefineerd." ;
+    sh:name        "schema:name of schema:additionalType" ;
     sh:description "schema:name en schema:additionalType ontbreken" ;
     sh:targetClass schema:CreativeWork ;
     sh:or          ( [ sh:property [ sh:path       schema:name ;
