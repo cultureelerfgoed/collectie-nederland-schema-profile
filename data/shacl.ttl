@@ -33,11 +33,13 @@ cn:CreativeWorkMandatoryAttributes
                      sh:minCount 1 ;
                      sh:severity sh:Warning ; ] ;
     sh:property    [ sh:path     schema:license ;
+                     sh:description "license ontbreekt, INFO tot meer duidelijk is" ;
                      sh:minCount 1 ;
                      sh:severity sh:Info ; ] ;
     sh:property    [ sh:path     schema:mainEntityOfPage ;
                      sh:minCount 1 ;
-                     sh:severity sh:Violation ; ] ;
+                     sh:description "Kan ook de URI zijn, INFO tot meer duidelijk is";
+                     sh:severity sh:Info ; ] ;
     sh:property    [ sh:path     schema:isPartOf ;
                      sh:minCount 1 ;
                      sh:severity sh:Warning ; ] ;
@@ -108,7 +110,7 @@ cn:CreativeWorkType
                      sh:description "dateCreated moet bestaan uit een v/d volgende formats: 'YYYY-MM-DD', 'YYYY-MM', of 'YYYY'"
                    ] ;
     sh:property    [ sh:path schema:temporal ;
-                     sh:dataType xsd:string;
+                     sh:datatype xsd:string;
                      sh:severity sh:Info;
                    ] ;
     sh:property    [ sh:path schema:creator ;
@@ -116,7 +118,7 @@ cn:CreativeWorkType
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:description ;
-                     sh:dataType rdf:langString;
+                     sh:datatype rdf:langString;
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:material ;
@@ -124,7 +126,7 @@ cn:CreativeWorkType
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:size ;
-                     sh:dataType xsd:String ;
+                     sh:datatype xsd:string ;
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:locationCreated ;
@@ -149,6 +151,7 @@ cn:MediaObjectShapeMinCount
     sh:property [ sh:path schema:license ;
                   sh:minCount 1;
                   sh:severity    sh:Info ;
+                  sh:description "license ontbreekt, hoe hier mee om te gaan moet nog besloten worden" ;
                 ] ;
     sh:property [ sh:path schema:thumbnailUrl ;
                   sh:minCount 1;
@@ -327,7 +330,7 @@ cn:DefinedTermShapeType
 
 cn:QuantativeValueMaxCount
     a sh:NodeShape ;
-    sh:targetClass schema:QuantativeValue ;
+    sh:targetClass schema:QuantitativeValue ;
     sh:description "veld komt te vaak voor";
     sh:property [ sh:path schema:value ;
                   sh:severity  sh:Warning ;
@@ -337,14 +340,14 @@ cn:QuantativeValueMaxCount
 .
 cn:QuantativeValueType
     a sh:NodeShape ;
-    sh:targetClass schema:QuantativeValue ;
+    sh:targetClass schema:QuantitativeValue ;
     sh:description "veld type incorrect" ;
     sh:property [ sh:path schema:value ;
-                  sh:dataType xsd:decimal;
+                  sh:datatype xsd:decimal;
                   sh:severity  sh:Warning ;
                 ] ;
     sh:property [ sh:path schema:unitText ;
-                  sh:dataType xsd:string ;
+                  sh:datatype xsd:string ;
                   sh:severity  sh:Warning ;
                 ] ;
 .
@@ -354,7 +357,7 @@ cn:PropertyValue
     a sh:NodeShape ;
     sh:targetClass schema:PropertyValue ;
     sh:property [ sh:path schema:value ;
-                  sh:dataType xsd:string;
+                  sh:datatype xsd:string;
                   sh:severity  sh:Warning ;
                   sh:description "schema:value is geen string" ;
                 ] ;
