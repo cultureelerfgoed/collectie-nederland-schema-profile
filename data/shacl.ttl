@@ -108,7 +108,7 @@ cn:CreativeWorkType
                      sh:description "dateCreated moet bestaan uit een v/d volgende formats: 'YYYY-MM-DD', 'YYYY-MM', of 'YYYY'"
                    ] ;
     sh:property    [ sh:path schema:temporal ;
-                     sh:dataType xsd:string;
+                     sh:datatype xsd:string;
                      sh:severity sh:Info;
                    ] ;
     sh:property    [ sh:path schema:creator ;
@@ -116,7 +116,7 @@ cn:CreativeWorkType
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:description ;
-                     sh:dataType rdf:langString;
+                     sh:datatype rdf:langString;
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:material ;
@@ -124,7 +124,7 @@ cn:CreativeWorkType
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:size ;
-                     sh:dataType xsd:String ;
+                     sh:datatype xsd:string ;
                      sh:severity sh:Warning;
                    ] ;
     sh:property    [ sh:path schema:locationCreated ;
@@ -337,7 +337,7 @@ cn:DefinedTermShapeType
 
 cn:QuantativeValueMaxCount
     a sh:NodeShape ;
-    sh:targetClass schema:QuantativeValue ;
+    sh:targetClass schema:QuantitativeValue ;
     sh:description "veld komt te vaak voor";
     sh:property [ sh:path schema:value ;
                   sh:severity  sh:Warning ;
@@ -347,14 +347,14 @@ cn:QuantativeValueMaxCount
 .
 cn:QuantativeValueType
     a sh:NodeShape ;
-    sh:targetClass schema:QuantativeValue ;
+    sh:targetClass schema:QuantitativeValue ;
     sh:description "veld type incorrect" ;
     sh:property [ sh:path schema:value ;
-                  sh:dataType xsd:decimal;
+                  sh:datatype xsd:decimal;
                   sh:severity  sh:Warning ;
                 ] ;
     sh:property [ sh:path schema:unitText ;
-                  sh:dataType xsd:string ;
+                  sh:datatype xsd:string ;
                   sh:severity  sh:Warning ;
                 ] ;
 .
@@ -364,7 +364,7 @@ cn:PropertyValue
     a sh:NodeShape ;
     sh:targetClass schema:PropertyValue ;
     sh:property [ sh:path schema:value ;
-                  sh:dataType xsd:string;
+                  sh:datatype xsd:string;
                   sh:severity  sh:Warning ;
                   sh:description "schema:value is geen string" ;
                 ] ;
