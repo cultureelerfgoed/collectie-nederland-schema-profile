@@ -32,8 +32,9 @@ cn:CreativeWorkMandatoryAttributes
                      sh:minCount 1 ;
                      sh:severity sh:Warning ; ] ;
     sh:property    [ sh:path     schema:license ;
+                     sh:description "license ontbreekt, hoe hier mee om te gaan moet nog besloten worden" ;
                      sh:minCount 1 ;
-                     sh:severity sh:Violation ; ] ;
+                     sh:severity sh:Info ; ] ;
     sh:property    [ sh:path     schema:mainEntityOfPage ;
                      sh:minCount 1 ;
                      sh:severity sh:Violation ; ] ;
@@ -147,7 +148,8 @@ cn:MediaObjectShapeMinCount
             ] ;
     sh:property [ sh:path schema:license ;
                   sh:minCount 1;
-                  sh:severity    sh:Violation ;
+                  sh:severity    sh:Info ;
+                  sh:description "license ontbreekt, hoe hier mee om te gaan moet nog besloten worden" ;
                 ] ;
     sh:property [ sh:path schema:thumbnailUrl ;
                   sh:minCount 1;
